@@ -49,11 +49,11 @@
     renderer.render(scene, camera);
 
     // Uncomment for manual camera control
-    let controls = new FlyControls(camera, renderer.domElement);
-    controls.movementSpeed = 200;
-    controls.rollSpeed = Math.PI / 24;
-    controls.autoForward = false;
-    controls.dragToLook = true;
+    // let controls = new FlyControls(camera, renderer.domElement);
+    // controls.movementSpeed = 200;
+    // controls.rollSpeed = Math.PI / 24;
+    // controls.autoForward = false;
+    // controls.dragToLook = true;
 
     function render(time: number) {
       // TODO:  use scroll position for this
@@ -64,7 +64,7 @@
       let p2 = tunnelPath.getPointAt(Math.min(afi + 0.1, 1));
 
       // Uncomment for manual camera control
-      controls.update(0.01);
+      // controls.update(0.01);
 
       // Comment out for manual camera control
       camera.position.set(p1.x, p1.y, p1.z);
